@@ -1,0 +1,40 @@
+/* Define CSS variables for colors for easy maintenance and consistency */
+:root {
+  --border-color: #ddd;
+  --background-default: #f9f9f9;
+  --button-bg-default: peachpuff;
+  --button-bg-hover: lightskyblue;
+  --button-text-color: white;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  background-color: var(--background-default);
+}
+
+button {
+  background-color: var(--button-bg-default);
+  color: var(--button-text-color);
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: var(--button-bg-hover);
+}
+
+
+@media (max-width: 600px) {
+  li {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

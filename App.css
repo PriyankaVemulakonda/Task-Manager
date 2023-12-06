@@ -1,0 +1,71 @@
+/* App.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background: url('/background.jpg') center center fixed;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.app-container {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  max-width: 600px;
+  width: 100%;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.header input{
+  padding:10px;
+  margin:5px;
+  border-radius: 5px;
+}
+
+/* TodoList.css */
+
+.todo-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* TodoItem.css */
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: lightblue;
+}
+
+.todo-item .buttons {
+  display: flex;
+  border-radius: 10px;
+}
+
+.todo-item button {
+  background-color: rgb(185, 113, 124);
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-left: 8px;
+  transition: background-color 0.3s ease; 
+}
+
+.todo-item button:hover {
+  background-color: lightgrey;
+}
